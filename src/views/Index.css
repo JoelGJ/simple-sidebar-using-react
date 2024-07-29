@@ -21,3 +21,47 @@ li {
     gap: 10px;
     font-weight: 500;
 }
+
+.segment {
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+}
+
+.btn {
+    padding: 5px;
+    background-color: var(--bg-primary);
+    border: 1px solid var(--bg-primary);
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.sidebar-header {
+    padding: 15px 30px;
+    background-color: var(--bg-primary);
+}
+
+.sidebar-container {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 40vw;
+    right: -40vw;
+    background-color: #fff;
+    transition: right 0.3s ease-in-out;
+}
+
+.sidebar-container.show {
+    right: 0;
+}
+
+.blur {
+    filter: blur(5px);
+    transition: filter 0.3s ease-in-out;
+}
+
+.sidebar-hide-icon {
+    font-weight: 600;
+    cursor: pointer;
+}

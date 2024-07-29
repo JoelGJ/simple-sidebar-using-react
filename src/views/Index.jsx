@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Index.css';
+import SideBar from './SideBar';
 
 export default function Index() {
+
+    const [sidebar, setSidebar] = useState(false)
+
+    const hideSidebar = () => {
+        setSidebar(false)
+    }
     return (
         <>
-            <header className='header'>
+            <header className={`header ${sidebar ? 'blur' : ''}`}>
                 <div className='nav-container'>
                     <ul className='nav-list'>
                         <li>Home</li>
@@ -13,6 +20,12 @@ export default function Index() {
                     </ul>
                 </div>
             </header>
+            <div className={`${sidebar ? '' : ''}`}>
+                <div className='segment'>
+                    <button className='btn' onClick={() => { setSidebar(true) }}>Save Segment</button>
+                </div>
+            </div>
+            <SideBar showSidebar={sidebar} hideSidebar={hideSidebar}/>
         </>
     );
 }
