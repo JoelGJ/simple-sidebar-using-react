@@ -6,6 +6,17 @@ li {
     list-style: none;
 }
 
+input {
+    padding: 10px;
+}
+
+.input-label {
+    padding: 10px 0;
+    font-weight: 500;
+}
+.grid {
+    display: grid;
+}
 .header {
     background-color: var(--bg-primary);
 }
@@ -29,12 +40,18 @@ li {
 }
 
 .btn {
-    padding: 5px;
+    padding: 15px;
     background-color: var(--bg-primary);
     border: 1px solid var(--bg-primary);
     border-radius: 5px;
     font-weight: 600;
     cursor: pointer;
+}
+
+.btn-danger {
+    color: red;
+    background-color: #fff;
+    border: 1px solid transparent;
 }
 
 .sidebar-header {
@@ -59,9 +76,30 @@ li {
 .blur {
     filter: blur(5px);
     transition: filter 0.3s ease-in-out;
+    /* background: rgba(0, 0, 0, 0.5); */
+    /* background-color: #403e3b66; */
 }
 
 .sidebar-hide-icon {
     font-weight: 600;
     cursor: pointer;
+}
+
+.sidebar-content {
+    padding: 15px 30px;
+}
+
+.sidebar-footer {
+    padding-bottom: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.sidebar-buttons {
+    display: flex;
+    gap: 10px;
+    padding: 20px 10px;
+    background-color: #dfdfdf;
+    border-radius: 5px;
 }
