@@ -1,12 +1,12 @@
 :root {
-    --bg-primary: #c6ff00a8
+    --bg-primary: #19a3b1a8
 }
 
 li {
     list-style: none;
 }
 
-input {
+input,select {
     padding: 10px;
 }
 
@@ -87,6 +87,8 @@ input {
 
 .sidebar-content {
     padding: 15px 30px;
+    max-height: 70vh;
+    overflow-y: auto;
 }
 
 .sidebar-footer {
@@ -102,4 +104,14 @@ input {
     padding: 20px 10px;
     background-color: #dfdfdf;
     border-radius: 5px;
+}
+
+.schema-select {
+    margin: 10px 0;
+}
+
+.add-new-schema-btn {
+    color: var(--bg-primary);
+    font-weight: 500;
+    cursor: pointer;
 }
